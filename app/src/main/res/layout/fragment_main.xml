@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
@@ -25,8 +25,18 @@
     </android.support.design.widget.TextInputLayout>
 
     <TextView
+        android:id="@+id/tvNoAlbum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Me!"/>
+        android:text="There's no album present at this moment."
+        android:layout_centerInParent="true"/>
 
-</LinearLayout>
+    <ProgressBar
+        android:layout_below="@id/tvNoAlbum"
+        android:id="@+id/progBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
